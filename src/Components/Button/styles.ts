@@ -40,5 +40,9 @@ export const styles = StyleSheet.create({
     textButtonLine:{
         color:'#9A4DFF', 
         fontSize:14
+    }, 
+    iconBtn:{
+        width:20, 
+        height:20
     }
 });

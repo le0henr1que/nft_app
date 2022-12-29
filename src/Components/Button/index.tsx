@@ -1,12 +1,15 @@
 
-import {Text, TouchableOpacity} from "react-native"
+import {Image, Text, TouchableOpacity} from "react-native"
 import {styles} from './styles'
 import {LinearGradient} from 'expo-linear-gradient';
 
-export function Button({background, text}){
+import { IconMetaMask } from '../../../assets/metaMask.png';
+
+export function Button({background, text, onPress}){
     return(
         background ?
          <TouchableOpacity 
+            onPress={onPress}
             style={styles.button}
         >
             <LinearGradient 
@@ -25,10 +28,11 @@ export function Button({background, text}){
         :
 
         <TouchableOpacity 
+            onPress={onPress}
             style={styles.buttonLine}
         >
             <Text style={styles.textButtonLine}>{text}</Text>
-           
+            {/* <Image source={IconMetaMask} style={{height: 100, width: 100}}/> */}
         </TouchableOpacity>
     )
 }
