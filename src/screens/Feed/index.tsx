@@ -5,13 +5,18 @@ import { Background } from "../../Components/Background"
 import { Header } from '../../Components/Header';
 import { Pill } from "../../Components/Pill"
 import EllipseImage from "../../assets/Ellipse.png"
+import Post1 from "../../assets/imgPostOne.png";
+import Post2 from "../../assets/ImagePostTwo.png"
+import Post3 from "../../assets/Post3.png"
+
+import Post4 from "../../assets/Post4.png"
 
 import { styles } from "./styles"
 import { Post } from '../../Components/Post';
 
 export function Feed(){
     const [text, onChangeText] = React.useState("");
-    const filters = ["Todos", "2D", "3D", "GIFs", "Ilustracão"]
+    const filters = ["Todos", "2D", "3D", "GIFs", "Ilustracão", "BTC", "ETH"]
     return (
         <Background>
             <SafeAreaView style={styles.container}>
@@ -46,9 +51,40 @@ export function Feed(){
                             )}
                         />
                         
-                    <Post/>
-                    <Post/>
-                    
+                    <Post 
+                        postContent={Post1} 
+                        nameUser="Hacker" 
+                        positionUser="Owned by" 
+                        imageProfileUser={Post1} 
+                        value="$2.453,23" 
+                        cryptoType="ETH" 
+                        valueCrypto="1.2"/>
+                    <Post 
+                        postContent={Post2} 
+                        nameUser="Hacker" 
+                        positionUser="Owned by" 
+                        imageProfileUser={Post3} 
+                        value="$2.453,23" 
+                        cryptoType="ETH" 
+                        valueCrypto="1.2"/>
+
+                    <Post 
+                        postContent={Post3} 
+                        nameUser="Hacker" 
+                        positionUser="Owned by" 
+                        imageProfileUser={Post2} 
+                        value="$2.453,23" 
+                        cryptoType="ETH" 
+                        valueCrypto="1.2"/>
+
+                    <Post 
+                        postContent={Post4} 
+                        nameUser="Hacker" 
+                        positionUser="Owned by" 
+                        imageProfileUser={Post2} 
+                        value="$2.453,23" 
+                        cryptoType="ETH" 
+                        valueCrypto="1.2"/>
                     </ScrollView>
                     
                 </View>

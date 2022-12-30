@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     button: {
         display:'flex',
         borderRadius:12,
-        width: 342, 
+        width: "100%", 
         height:48, 
         textAlign:'center', 
         justifyContent: 'center',

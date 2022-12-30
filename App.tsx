@@ -3,6 +3,7 @@ import { Background } from './src/Components/Background'
 
 import { Login } from './src/screens/Login'
 import { Feed } from './src/screens/Feed'
+import { Wallet } from './src/screens/Wallet'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -41,7 +42,6 @@ export default function App() {
             }}
           
           >
-            {/* <Tab.Screen name="Login" component={Login} options={{tabBarStyle:{display:'none'}, tabBarIconStyle: {display:'none'}, tabBarLabelStyle:{display:'none'}}} /> */}
             <Tab.Screen 
               name="Crypto" 
               component={Feed} 
@@ -54,7 +54,7 @@ export default function App() {
             
             <Tab.Screen 
               name="Wallet" 
-              component={Feed} 
+              component={Wallet} 
               options={{ 
                 tabBarLabelStyle:{display:'none'}, 
                 tabBarIcon:() => {
