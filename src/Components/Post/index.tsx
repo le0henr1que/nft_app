@@ -14,12 +14,13 @@ interface Post {
     imageProfileUser:string, 
     value:string, 
     cryptoType:string, 
-    valueCrypto:string
+    valueCrypto:string, 
+    onPress:any
 }
 
-export function Post({postContent, nameUser, positionUser, imageProfileUser, value, cryptoType, valueCrypto}:Post){
+export function Post({postContent, nameUser, positionUser, imageProfileUser, value, cryptoType, valueCrypto, onPress}:Post){
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <Image source={postContent} style={styles.imagePost}/>
             <View style={styles.borderDescription}></View>
     

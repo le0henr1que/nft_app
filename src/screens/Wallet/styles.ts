@@ -18,10 +18,10 @@ export const styles = StyleSheet.create({
         justifyContent:"space-between", 
         alignItems:"center", 
         paddingLeft:30, 
-        marginTop:40, 
+        marginTop:60, 
         marginBottom:24,
-        borderWidth:1, 
-        borderColor:"#FFF"
+        // borderWidth:1, 
+        // borderColor:"#FFF"
       }, 
   
       textBoldLeft:{
@@ -50,8 +50,8 @@ export const styles = StyleSheet.create({
         borderRadius:12, 
         width:"100%", 
         // height:116, 
-        borderWidth:0.9, 
-        borderColor:"#FFF", 
+        // borderWidth:0.9, 
+        // borderColor:"#FFF", 
         marginTop:16
       }, 
       scrollView:{

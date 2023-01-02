@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
         fontWeight:"bold", 
     },  
     contentLeftTextDate:{
-        color:"#5EEBFF", 
+        color:"#FFA7FF", 
         fontSize:12,
         fontWeight:"normal", 
     }, 
@@ -43,12 +43,12 @@ export const styles = StyleSheet.create({
         alignItems:"flex-end"
     },
     contentRightCryptoPrice:{
-        color:"#5EEBFF", 
+        color:"#FFA7FF", 
         fontSize:14,
         fontWeight:"bold",  
     },
     contentRightPrice:{
-        color:"#5EEBFF", 
+        color:"#FFA7FF", 
         fontSize:12,
         fontWeight:"normal", 
     }, 

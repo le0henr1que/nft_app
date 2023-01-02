@@ -9,7 +9,10 @@ import Post1 from "../../assets/imgPostOne.png";
 import Post2 from "../../assets/ImagePostTwo.png"
 import Post3 from "../../assets/Post3.png"
 
+// import { Detail } from "../Detail"
+
 import Post4 from "../../assets/Post4.png"
+import { useNavigation } from "@react-navigation/native"
 
 import { styles } from "./styles"
 import { Post } from '../../Components/Post';
@@ -17,6 +20,8 @@ import { Post } from '../../Components/Post';
 export function Feed(){
     const [text, onChangeText] = React.useState("");
     const filters = ["Todos", "2D", "3D", "GIFs", "Ilustracão", "BTC", "ETH"]
+    const navigation = useNavigation()
+
     return (
         <Background>
             <SafeAreaView style={styles.container}>
@@ -58,7 +63,9 @@ export function Feed(){
                         imageProfileUser={Post1} 
                         value="$2.453,23" 
                         cryptoType="ETH" 
-                        valueCrypto="1.2"/>
+                        valueCrypto="1.2"
+                        onPress={() =>  navigation.navigate('Detail')}
+                        />
                     <Post 
                         postContent={Post2} 
                         nameUser="Hacker" 

@@ -17,7 +17,8 @@ interface Activity {
 
 export function Activity({bid, crypto, date, amountCrypto, priceCrypt, priceMoney}:Activity){
     return(
-       <View style={styles.container}>
+        <>      
+        <View style={styles.container}>
             <View style={styles.contentLeft}>
                 <Image source={bid == true ? bidIcon : IconMetaMask} style={styles.contentLeftImage}/>
                 <View style={styles.contentLeftText}>
@@ -31,5 +32,8 @@ export function Activity({bid, crypto, date, amountCrypto, priceCrypt, priceMone
                 <Text  style={bid == true ?  {color:"#F600DD", fontSize:12,fontWeight:"normal"} :  styles.contentRightPrice}>{priceMoney}</Text>
             </View>
        </View>
+    <View style={styles.lineDiv}></View>
+    </>
+ 
     )
 }

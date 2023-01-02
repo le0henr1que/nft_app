@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
         borderColor:  '#9A4DFF',
         display:'flex',
         borderRadius:12,
-        width: 342, 
+        width: "100%", 
         height:48, 
         textAlign:'center', 
         justifyContent: 'center',
